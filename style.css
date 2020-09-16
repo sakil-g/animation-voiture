@@ -1,0 +1,40 @@
+body {
+
+}
+
+.voiture
+{
+position: relative;
+z-index: 1;    
+
+}
+
+.roue-avant
+{
+position: absolute;
+left: 274px;
+top: 186px;
+z-index: -1;
+-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 850ms linear infinite;
+
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.roue-arr
+{
+    position: absolute;
+    left: 847px;
+    top: 186px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 850ms linear infinite;
+    
+
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
